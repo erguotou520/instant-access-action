@@ -1,5 +1,6 @@
 name: "Instant access"
 description: "Instant access（即时达推送） for github action"
+author: "erguotou"
 inputs:
   channel:
     description: "Channel key（通道key）"
@@ -16,3 +17,6 @@ outputs:
 runs:
   using: "node12"
   main: "index.js"
+branding:
+  icon: "message-square"
+  color: "blue"

@@ -1,5 +1,5 @@
 {
-  "name": "action-instant-access",
+  "name": "instant-access-action",
   "version": "0.0.1",
   "description": "Instant access for github action",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/erguotou520/action-instant-access.git"
+    "url": "git+https://github.com/erguotou520/instant-access-action.git"
   },
   "keywords": [
     "instant",
@@ -19,9 +19,9 @@
   "author": "erguotou525@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/erguotou520/action-instant-access/issues"
+    "url": "https://github.com/erguotou520/instant-access-action/issues"
   },
-  "homepage": "https://github.com/erguotou520/action-instant-access#readme",
+  "homepage": "https://github.com/erguotou520/instant-access-action#readme",
   "dependencies": {
     "@actions/core": "^1.2.4",
     "@actions/github": "^2.2.0"

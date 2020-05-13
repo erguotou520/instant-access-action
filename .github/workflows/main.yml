@@ -1,0 +1,17 @@
+on: [push]
+
+jobs:
+  instant-access:
+    runs-on: ubuntu-latest
+    name: A job for testing
+    steps:
+      - name: Test instant access action
+        id: test
+        uses: actions/instant-access-action@v1
+        with:
+          channel: "d255d62caef24a3bb66c3465dad70407"
+          head: "Test message"
+          body: "Test content"
+      # Use the output from the `hello` step
+      - name: Get the output time
+        run: echo "The time was ${{ steps.test.outputs.time }}"
