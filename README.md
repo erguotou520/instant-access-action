@@ -32,3 +32,13 @@ with:
   head: "Test message"
   body: "Test content"
 ```
+
+Or you can use interpolation message
+
+```yml
+uses: erguotou520/instant-access-action@v1
+with:
+  channel: "d255d62caef24a3bb66c3465dad70407"
+  head: "{{repositoryName}} push status"
+  body: '{{author}} commit "{{commitMessage}}" on {{repositoryName}}#{{branchName}} branch at {{commitTime}} with hash {{commitHash}}'
+```
