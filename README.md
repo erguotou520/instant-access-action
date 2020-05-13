@@ -1,5 +1,7 @@
 # Instant access（即时达推送） action
 
+![.github/workflows/main.yml](https://github.com/erguotou520/instant-access-action/workflows/.github/workflows/main.yml/badge.svg?branch=v1)
+
 Use this action to push wechat message to youself or share message with channel.
 使用该 action 来推送消息到你的微信上。
 
