@@ -26,7 +26,7 @@ The time we send the request. 接口请求完成时间（不保证一定是微�
 ## Example usage
 
 ```yml
-uses: actions/instant-access-action@v1
+uses: erguotou520/instant-access-action@v1
 with:
   channel: "d255d62caef24a3bb66c3465dad70407"
   head: "Test message"
