@@ -13,8 +13,10 @@ try {
   request(github.context.payload, channel, head, body).then(() => {
     core.setOutput('time', new Date().toISOString())
   }).catch(err => {
+    console.log(111)
     core.setFailed(err);
   })
 } catch (error) {
+  console.log(222)
   core.setFailed(error.message);
 }
