@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Test instant access action
         id: test
-        uses: actions/instant-access-action@v1
+        uses: actions/instant-access@v1
         with:
           channel: "d255d62caef24a3bb66c3465dad70407"
           head: "Test message"
