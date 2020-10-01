@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/erguotou520/instant-access-action#readme",
   "dependencies": {
-    "@actions/core": "^1.2.4",
+    "@actions/core": "^1.2.6",
     "@actions/github": "^2.2.0",
     "lodash.get": "^4.4.2"
   },
