@@ -1,0 +1,25 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Ping and pong
+
+on:
+  schedule:
+    - cron: '20 1 */5 * *'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+    - name: Instant access
+      # You may pin to the exact commit or the version.
+      # uses: erguotou520/instant-access-action@faa77bc06432292659414ba094e299a049c7d364
+      uses: erguotou520/instant-access-action@v1
+      with:
+        # Channel key（通道key）
+        channel: ${{secret.PING_CHANNEL}}
+        # Message head
+        head: 即时达在线状态测试
+        # Message body
+        body: 在线
