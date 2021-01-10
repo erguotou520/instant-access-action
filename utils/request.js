@@ -19,7 +19,7 @@ module.exports = function (payload, channel, head, body) {
     })
 
   } catch (error) {
-    Promise.reject(error.message);
+    return Promise.reject(error.message);
   }
 }
 
