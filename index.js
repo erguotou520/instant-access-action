@@ -3,6 +3,7 @@ const github = require('@actions/github');
 const request = require('./utils/request');
 
 try {
+  console.log('version', require('./package.json').version)
   const channel = core.getInput('channel');
   const head = core.getInput('head');
   const body = core.getInput('body');
