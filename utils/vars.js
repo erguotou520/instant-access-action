@@ -26,6 +26,7 @@ module.exports = function (originStr, payload) {
     const valuePath = (payload.action === 'closed'  && payload.pull_request) ? prVars[_var] : payload.head_commit ? vars[_var] : null
     if (valuePath) {
       let ret = valuePath ? get(payload, valuePath) : matched
+      console.log(`valuePath: ---> ${valuePath}`, ret)
       if (valuePath === 'ref') {
         // parse ref value
         ret = ret.replace(/^refs\/heads\//, '')
